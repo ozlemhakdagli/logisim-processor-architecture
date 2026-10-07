@@ -99,7 +99,7 @@ The processor provides the complete set of 32 RISC-V integer registers:
 | `srl rd, rs1, rs2` | `101` | `0000000` | $R[rd] = R[rs1] \gg_{L} R[rs2][4:0]$ | Shift Right Logical |
 | `sra rd, rs1, rs2` | `101` | `0100000` | $R[rd] = R[rs1] \gg_{A} R[rs2][4:0]$ | Shift Right Arithmetic |
 | `or rd, rs1, rs2`  | `110` | `0000000` | $R[rd] = R[rs1] \mid R[rs2]$ | Bitwise OR |
-| `and rd, rs1, rs2` | `111` | `0000000` | $R[rd] = R[rs1] \ \& \ R[rs2]$ | Bitwise AND |
+| `and rd, rs1, rs2` | `111` | `0000000` | $R[rd] = R[rs1] \ \\& \ R[rs2]$ | Bitwise AND |
 
 ### 3.2 I-Type Instructions
 | Mnemonic | `opcode` | `funct3` | Operation | Description |
@@ -112,9 +112,9 @@ The processor provides the complete set of 32 RISC-V integer registers:
 | `srli rd, rs1, shamt`| `0010011` | `101` | $R[rd] = R[rs1] \gg_{L} \text{shamt}$ | Shift Right Logical Imm |
 | `srai rd, rs1, shamt`| `0010011` | `101` | $R[rd] = R[rs1] \gg_{A} \text{shamt}$ | Shift Right Arithmetic Imm |
 | `ori rd, rs1, imm`  | `0010011` | `110` | $R[rd] = R[rs1] \mid \text{imm}$ | Bitwise OR Immediate |
-| `andi rd, rs1, imm` | `0010011` | `111` | $R[rd] = R[rs1] \ \& \ \text{imm}$ | Bitwise AND Immediate |
+| `andi rd, rs1, imm` | `0010011` | `111` | $R[rd] = R[rs1] \ \\& \ \text{imm}$ | Bitwise AND Immediate |
 | `lw rd, offset(rs1)`| `0000011` | `010` | $R[rd] = M[R[rs1] + \text{offset}]$ | Load Word |
-| `jalr rd, offset(rs1)`| `1100111`| `000` | $R[rd] = PC + 4;\ PC = (R[rs1] + \text{offset}) \ \& \ \sim 1$ | Jump and Link Register |
+| `jalr rd, offset(rs1)`| `1100111`| `000` | $R[rd] = PC + 4;\ PC = (R[rs1] + \text{offset}) \ \\& \ \sim 1$ | Jump and Link Register |
 
 ### 3.3 S-Type Store Instructions
 | Mnemonic | `opcode` | `funct3` | Operation | Description |
