@@ -1,0 +1,24 @@
+# Logisim backup / temp files
+*.circ~
+*.bak
+*.tmp
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python / Environment
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local Tools & Build
+logisim-evolution-*/
+*.jar
