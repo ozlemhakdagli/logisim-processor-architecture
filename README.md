@@ -91,14 +91,6 @@ java -jar logisim-evolution-5.0.0-all.jar
 
 ---
 
-## 🗺️ Architectural Roadmap
-
-- [x] **8-Bit Educational Computer:** Gate-level design, custom ISA, single-file modular integration, verified with Logisim-Evolution v5.0.
-- [x] **16-Bit Mano Machine:** Complete 16-bit Common Bus architecture, 30 subcircuit hierarchy, full 25-instruction set.
-- [x] **32-Bit RISC-V Architecture (RV32I):** Complete single-cycle implementation with 32 registers, 10-op ALU, immediate generator, instruction ROM, data RAM, branch evaluation, verified with Logisim-Evolution v5.0.
-
----
-
 ## 📄 License
 
 This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this work for academic, educational, and personal projects.
